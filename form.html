@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        background-color: rgb(238, 236, 236);
+        /* border: 2px solid black; */
+        height: auto;
+        width: 350px;
+        border-radius: 10px;
+        margin-left: 500px;
+        margin-right: 500px;
+        padding: 10px;
+        font-weight: bold;
+        /* font-size: 20px; */
+    }
+    button{
+        background-color: green;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+
+<body style="background: radial-gradient(#9198e5 , red );">
+    <center>
+        <h2>Feedback Form</h2>
+    </center>
+    <form action="">
+        <label for="cars">Feedback Type:</label>
+        <br>
+        <select style="padding: 5px; width: 100%;" name="cars" id="cars"">
+            <option value=" compliment">Compliment</option>
+            <option value="formal">Formal</option>
+            <option value="Informal">Informal</option>
+        </select>
+        <br><br>
+
+        <label for="msg">Message:</label>
+        <br>
+        <textarea name="msg" id="msg" style="width: 100%; "></textarea>
+        <br><br>
+
+        <label for="">Website Rating</label>
+        <br>
+        <div style="display: flex; align-items: center;">
+            <input type="radio" id="Excellent" name="Excellent" value="Excellent">
+            <label for="Excellent">Excellent</label><br>
+            <input type="radio" id="Good" name="Good" value="Good">
+            <label for="Good">Good</label><br>
+            <input type="radio" id="Average" name="Average" value="Average">
+            <label for="Average">Average</label><br>
+            <input type="radio" id="Poor" name="Poor" value="Poor">
+            <label for="Poor">Poor</label><br>
+            <br>
+        </div>
+
+
+        <label for="Age">Age(10-100):</label>
+        <br>
+        <input style="width: 96%; padding: 5px;" type="number" min="10" max="100">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input style="width: 96%; padding: 5px" type="email" required>
+        <br><br>
+
+        <label for="password">Password (min 8 characters):</label>
+        <br>
+        <input style="width: 96%; padding: 5px" type="password" required min="8">
+        <br><br>
+
+        <label for="Website URL">Website URL (optional):</label>
+        <br>
+        <input style="width: 96%; padding: 5px" type="url">
+        <br><br>
+
+        <input type="checkbox" name="checkbox" value="checkbox">
+        <label for="checkbox">I agree to the terms and conditions</label>
+        <br>
+
+        <center>
+            <button>Submit</button>
+        </center>
+        
+    </form>
+</body>
+
+</html>
