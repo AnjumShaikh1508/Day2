@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinSwitch</title>
+</head>
+<style>
+    * {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-family: sans-serif;
+    }
+
+    #container {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 60px;
+        /* height: auto; */
+        position: sticky;
+        top: 15px;
+        background-color: white;
+    }
+
+    #container>div:nth-child(2)>select {
+        /* padding: 10px; */
+        border: none;
+        font-size: 15px;
+        font-family: Nexa, sans-serif;
+    }
+
+    #container>div:nth-child(2)>a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #container>div:nth-child(2)>button {
+        background-color: rgb(177 229 14);
+        padding: 15px 30px;
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    #second {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        /* position: relative;
+        top: 50px; */
+    }
+
+    .main_container {
+        background: linear-gradient(5turn, white, rgba(179, 202, 240, 0.5));
+        padding: 70px 90px;
+        border-radius: 0px;
+        position: relative;
+        z-index: 2;
+        border-radius: 20px;
+    }
+
+    .main_container>div:nth-child(2)>h1:nth-child(1) {
+        font-size: 80px;
+    }
+
+    .main_container>div:nth-child(2)>h1:nth-child(2) {
+        font-size: 80px;
+        color: rgb(59 130 246 / 90%);
+        margin-top: -50px;
+    }
+
+    .main_container>div:nth-child(3)>p {
+        font-size: 30px;
+        width: 70%;
+        color: rgb(51, 45, 45);
+    }
+
+    .main_container>div:nth-child(1)>img {
+        padding-top: 30px;
+    }
+
+    .main_container>button {
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        padding: 15px 40px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(20, 70px);
+        position: absolute;
+        /* top: 50px; */
+        width: 100%;
+    }
+
+    #grid>div {
+        border: .5px solid hsla(240, 1%, 86%, .847);
+    }
+
+    #grid>div:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <nav id="container">
+        <div id="first">
+            <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="">
+        </div>
+        <div id="second">
+            <select name="Products" id="Products">
+                <option value="Products">Products</option>
+            </select>
+            <a href="">Coins</a>
+            <a href="">Ventures</a>
+            <a href="">Blog</a>
+            <select name="Company" id="Company">
+                <option value="Company">Company</option>
+            </select>
+            <button>Login To Pro</button>
+        </div>
+    </nav>
+    <div id="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="main_container">
+        <div>
+            <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="">
+        </div>
+        <div>
+            <h1>Your Innovation</h1>
+            <h1>Our Fuel</h1>
+        </div>
+        <div>
+            <p>CoinSwitch Ventures invests in the most promising Web3 and Blockchain projects in India. Does that
+                sound
+                like you?</p>
+        </div>
+        <button>Apply Now</button>
+    </div>
+
+</body>
+
+</html>
